@@ -181,13 +181,11 @@ regarding these all the while having TTL on them is necessary.
 
 ### Phase 0 - Scaffolding and thin implementation
 
-- [ ] Initialize Go project with
-    - [ ] CLI entry point `cmd/ingestor/main.go` takes file path and prints records count
-    - [ ] Makefile for triggering pipeline
-    - [ ] Docker compose
-- [ ] Add Dockerized infra
-    - [ ] Go app w/ Air
-    - [ ] PostgreSQL with `pg_trgm` extension
+- [x] Initialize Go project with
+    - [x] CLI entry point `cmd/ingestor/main.go` takes file path and prints records count
+    - [x] Makefile for triggering pipeline
+- [x] Add Dockerized infra
+    - [x] PostgreSQL with `pg_trgm` extension
 - [ ] `internal/store`: `Store` interface + PostgreSQL implementation
 - [ ] Thin MVP
     - [ ] Stream opening of CSV files (LEI CDF)
